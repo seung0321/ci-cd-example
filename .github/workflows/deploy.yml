@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Echo test
-        run: ${{ vars.TEST }}
+        run: echo ${{ vars.TEST }}
 
       - name: Deploy to EC2
         uses: appleboy/ssh-action@v0.1.6
